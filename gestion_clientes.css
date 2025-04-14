@@ -1,0 +1,44 @@
+/* principal.css (y el mismo en gestion_clientes.css si lo deseas) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Asegura que la página ocupe todo el alto de la ventana */
+    background-color: #f4f4f9;  /* Fondo suave */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;  /* Máximo de ancho para la caja */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    border-radius: 8px;  /* Bordes redondeados */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

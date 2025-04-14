@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Movimientos</title>
+  <link rel="stylesheet" href="movimientos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión de Movimientos</h1>
+    <button onclick="mostrarBusquedaID()">Buscar Cuenta por ID</button>
+
+    <!-- Cuadro flotante de búsqueda -->
+    <div id="modalBusqueda" class="modal">
+        <div class="modal-contenido">
+            <span onclick="cerrarBusquedaID()" class="cerrar">&times;</span>
+            <h3>Buscar Cuenta por ID</h3>
+            <input type="text" id="busquedaID" placeholder="Ingrese el código de cuenta">
+            <button onclick="buscarCuentaPorID()">Buscar</button>
+        <div id="resultadoBusqueda"></div>
+    </div>
+  </div>
+    <div class="formulario">
+      <label for="cuentaSelect">Cuenta:</label>
+      <select id="cuentaSelect"></select>
+
+      <label for="tipoMovimiento">Tipo de Movimiento:</label>
+      <select id="tipoMovimiento">
+        <option value="deposito">Depósito</option>
+        <option value="retiro">Retiro</option>
+      </select>
+
+      <label for="monto">Monto:</label>
+      <input type="number" id="monto" min="1">
+
+      <button onclick="realizarMovimiento()">Realizar Movimiento</button>
+    </div>
+
+    <hr>
+
+    <div class="consulta">
+      <h2>Consultar Movimientos</h2>
+      <label for="cuentaConsulta">Cuenta:</label>
+      <select id="cuentaConsulta"></select>
+
+      <button onclick="mostrarMovimientos()">Ver Historial</button>
+
+      <div id="historialMovimientos"></div>
+    </div>
+
+    <button onclick="window.location.href='principal.html'">Volver</button>
+  </div>
+
+  <script src="movimientos.js"></script>
+</body>
+</html>

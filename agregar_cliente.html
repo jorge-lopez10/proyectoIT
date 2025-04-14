@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Cliente</title>
+    <link rel="stylesheet" href="agregar_cliente.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Nuevo Cliente</h1>
+
+        <form id="formAgregarCliente">
+            <label for="idCliente">ID Cliente (generado automáticamente):</label>
+            <input type="text" id="idCliente" disabled>
+
+            <label for="nombreCliente">Nombre:</label>
+            <input type="text" id="nombreCliente" required>
+            <label for="apellidoCliente">Apellido:</label>
+            <input type="text" id="apellidoCliente" required>
+
+            <label for="dniCliente">DNI:</label>
+            <input type="text" id="dniCliente" required>
+
+            <button type="submit">Guardar Cliente</button>
+            <button type="button" onclick="cancelar()">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="agregar_cliente.js"></script>
+</body>
+</html>
+

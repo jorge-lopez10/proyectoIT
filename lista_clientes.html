@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Clientes</title>
+    <link rel="stylesheet" href="lista_clientes.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Clientes</h1>
+        </header>
+
+        <section>
+            <h2>Buscar Cliente</h2>
+            <input type="text" id="searchCliente" placeholder="Buscar por ID, nombre o apellido">
+            <button onclick="buscarClientes()">Buscar</button>
+        </section>
+
+        <section>
+            <h2>Lista Completa de Clientes</h2>
+            <table id="tablaClientes">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los clientes se agregarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <button id="btn" onclick="window.location.href='gestion_clientes.html'">Volver</button>
+    <script src="lista_clientes.js"></script>
+</body>
+</html>
